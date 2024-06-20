@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.root{
+    display: grid;
+    grid-template-columns: 3fr 1fr 6fr;
+    width: 100%;
+    height: 100%;
+}
+
+.cards{
+    background-image: url("/images/bg-main-desktop.png");
+    display: grid;
+}
+
+label{
+    font-size: small;
+    font-weight: bold;
+}
+
+input::placeholder{
+    color: hsl(270, 3%, 87%);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+.login{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    align-self:   center;
+}
+
+.login-input{
+    width: 100%;
+}
+
+.login-input input{
+    padding: 2.5%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: hsl(270, 3%, 87%);
+    box-sizing: border-box;
+}
+
+.date>input{
+    width: 100%;
+}
+
+.cname{
+    width: 100%;
+}
+
+.cnumber{
+    width: 100%;
+}
+.date-cvc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10%;
+
+}
+
+.date, .cvc-cont{
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 5%;
+}
+
+.date-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.confirm-btn{
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: hsl(278, 94%, 30%);
+    color: #fff;
+}
+
+.date-input>input, .cvc{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.bank-card{
+    aspect-ratio: 447 / 245;
+    height: 170px;
+    background-size: contain;
+}
+
+.b-card1{
+    position: relative;
+    background-image: url(/images/bg-card-front.png);
+    left: 170px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.b-card2{
+    position: relative;
+    background-image: url(/images/bg-card-back.png);
+    left: 240px;
+}
+
+
+.card-container{
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.circle-cont{
+    position: relative;
+    left: 15px;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 7px;
+    height: 65%;
+}
+
+.circle{
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.circle1{
+    aspect-ratio: 1 / 1;
+    height: 25px;
+    background-color: #fff;
+}
+
+.circle2{
+    aspect-ratio: 1 / 1;
+    height: 12px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.b-number{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    width: 90%;
+    color: #fff;
+    justify-self: center;
+    align-self: end;
+    row-gap: 13px;
+}
+.b-num{
+    grid-column: 1 / span 2;
+    font-size: 22.5px;
+}
+
+.b-date{
+    justify-self: end;
+    font-size: small;
+}
+.b-name{
+    font-size: small;
+}
+
+.b-cvc{
+    position: relative;
+    left: 245px;
+    top: 75px;
+    font-size: small;
+    color: #fff;
+}
+

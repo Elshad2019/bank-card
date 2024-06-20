@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+    <script defer src="card.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="root">
+        <div class="cards">
+
+            <div class="card-container">
+                <div class="bank-card b-card1">
+                    <div class="circle-cont">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                    </div>
+                    <div class="b-number">
+                        <div class="b-num" style=" font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;">0000 0000 0000 0000</div>
+                        <div class="b-name">Elshad Aghashirinov</div>
+                        <div class="b-date">00/00</div>
+                    </div>
+                </div>
+                <div class="bank-card b-card2">
+                    <div class="b-cvc">000</div>
+                </div>
+            </div>
+        
+        </div>
+        <div></div>
+        <div class="login">
+            <div class="login-input">
+                <label for="cname">CARHOLDER NAME</label>
+                <input class="cname" oninput="uptCname(this)" maxlength="20" type="text" name="cname" id="cname" placeholder="e.g. Elshad Aghashirinov" >
+            </div>
+            <div class="login-input">
+                <label for="cnumber">CARD NUMBER</label>
+                <input class="cnumber" oninput="uptCnumber(this)" maxlength="19" type="text" id="cnumber" name="cnumber" placeholder="e.g. 1234 5678 9123 0000">
+            </div>
+            <div class="login-input">
+                <div class="date-cvc">
+                    <div class="date">
+                        <label for="udate">Exp. Date (MM/YY)</label>
+                        <div class="date-input">
+                            <input type="text" placeholder="MM" maxlength="2" oninput="uptDateMM(this)">
+                            <input type="text" placeholder="YY" maxlength="2" oninput="uptDateYY(this)">
+                        </div>
+                    </div>
+                    <div class="cvc-cont">
+                        <label for="cvc">CVC</label>
+                        <input class="cvc" oninput="uptCvc(this)" maxlength="3" type="text" placeholder="e.g.123"> 
+                    </div>
+                </div>
+            </div>
+            <button class="confirm-btn">Confirm</button>
+        </div>
+    </div>
+</body>
+</html>
