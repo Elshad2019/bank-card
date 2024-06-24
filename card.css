@@ -16,7 +16,7 @@ html, body{
 }
 
 .cards{
-    background-image: url("/images/bg-main-desktop.png");
+    background-image: url("./images/bg-main-desktop.png");
     display: grid;
 }
 
@@ -106,7 +106,7 @@ input::placeholder{
 
 .b-card1{
     position: relative;
-    background-image: url(/images/bg-card-front.png);
+    background-image: url("./images/bg-card-front.png");
     left: 170px;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -114,7 +114,7 @@ input::placeholder{
 
 .b-card2{
     position: relative;
-    background-image: url(/images/bg-card-back.png);
+    background-image: url("./images/bg-card-back.png");
     left: 240px;
 }
 
